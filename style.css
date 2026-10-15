@@ -1,0 +1,31 @@
+/* Reset căn bản */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.left-column {
+    width: 60%;
+    float: left;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.right-column {
+    width: 38%;
+    float: right;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+/* Xử lý clearfix để tránh sụp đổ khung bao (parent collapse) khi dùng float */
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
